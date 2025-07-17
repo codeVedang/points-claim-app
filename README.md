@@ -77,4 +77,4 @@ npm start
 cpp
 Copy
 Edit
-Frontend: https://your-netlify-app-url.netlify.app
+Frontend: [https://points-claim-app-vedang.vercel.app/]
