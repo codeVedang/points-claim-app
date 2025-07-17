@@ -8,6 +8,9 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./Leaderboard.css";
 
+// Use environment variable for API base (works on localhost and Vercel)
+const API_BASE = process.env.REACT_APP_API_BASE || "http://localhost:5000";
+
 const Leaderboard = () => {
   const [leaderboard, setLeaderboard] = useState([]);
 
@@ -15,7 +18,7 @@ const Leaderboard = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/leaderboard");
+        const res = await axios.get(`${API_BASE}/api/leaderboard`);
         setLeaderboard(res.data);
       } catch (err) {
         console.error("Failed to fetch leaderboard:", err);
@@ -35,7 +38,7 @@ const Leaderboard = () => {
     <div className="leaderboard-container">
       <h2>Leaderboard</h2>
 
-      // Podium Section
+      {/* Podium Section */}
       <div className="podium">
         {topThree.map((user, index) => (
           <div key={user._id} className={`podium-user place-${index + 1}`}>
@@ -48,7 +51,7 @@ const Leaderboard = () => {
         ))}
       </div>
 
-      // Table Section for ranks 4 and below
+      {/* Table Section for ranks 4 and below */}
       <table className="rest-table">
         <thead>
           <tr>
@@ -78,4 +81,3 @@ const Leaderboard = () => {
 };
 
 export default Leaderboard;
-
