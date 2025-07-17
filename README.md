@@ -73,8 +73,8 @@ cd frontend
 npm install
 npm start
 ```
-## 🌐 Live Demo (if deployed)
+##  Live Demo (if deployed)
 cpp
 Copy
 Edit
-Frontend: [https://points-claim-app-vedang.vercel.app/]
+Frontend: [https://points-claim-app-vedang.vercel.app/] 
