@@ -1,0 +1,49 @@
+# === Node.js ===
+node_modules/
+.env
+.env.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# === Logs ===
+logs
+*.log
+debug.log
+*.pid
+*.seed
+*.pid.lock
+
+# === Operating System ===
+.DS_Store
+Thumbs.db
+
+# === Editor Files ===
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# === Build Output ===
+build/
+dist/
+
+# === React (Frontend) ===
+frontend/node_modules/
+frontend/build/
+
+# === Backend (Server) ===
+backend/node_modules/
+
+# === Optional Cache / Temp ===
+.cache/
+.next/
+out/
+.terraform/
+
+# === Testing ===
+coverage/
+
+# === Misc ===
+*.tgz
+*.zip
