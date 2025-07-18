@@ -1,7 +1,7 @@
 # 🏆 Points Claim Leaderboard App
 
 A full-stack web application where users can claim random points, get ranked on a real-time leaderboard, and track all claim history.  
-Built as part of Round 1 Task for **3W Business Pvt. Ltd.**
+
 
 ---
 
