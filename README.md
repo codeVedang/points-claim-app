@@ -45,36 +45,18 @@ cd points-claim-app
 
 
 2. Setup Backend
-bash
-Copy
-Edit
 cd backend
 npm install
 Create a .env file in backend/ with:
-
-ini
-Copy
-Edit
 MONGO_URI=your_mongo_db_connection_string
 Then run:
-
-bash
-Copy
-Edit
 node server.js
 
 3. Setup Frontend
 Open a new terminal:
-
-bash
-Copy
-Edit
 cd frontend
 npm install
 npm start
 ```
 ##  Live Demo (if deployed)
-cpp
-Copy
-Edit
 Frontend: [https://points-claim-app-vedang.vercel.app/] 
